@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    overflow: hidden;
+    position: relative;
+    background-color: #E9B34A;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curtain{
+    position: absolute;
+    opacity: 10%;
+    z-index: 2;
+    width: 75%;
+    height: 150vh;
+}
+
+.curtain:nth-child(1){
+    left: 50%;
+    transform: rotate(-20deg);
+}
+
+.curtain:nth-child(2){
+    right: 50%;
+    transform: rotate(20deg);
+}
+
+
+.titleBox{
+    height: 10vh;
+    width: 20%;
+    background-color: #A94141;
+    margin-right: 5vmin;
+    display: grid;
+    place-content: center;
+    border: .4vmin solid #E9B34A;
+    outline: 1vmin solid #A94141;
+}
+
+header > .titleBox, header > h1{
+    position: relative;
+}
